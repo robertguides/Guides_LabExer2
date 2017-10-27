@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.guides.labexer2.Main2Activity"
+    android:background="@drawable/wow">
+
+    <Button
+        android:onClick="displayPreferences"
+        android:text="Load Shared Preferences"
+        android:id="@+id/BTN4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp" />
+    <Button
+        android:onClick="displayStorage"
+        android:text="Load Internal Storage"
+        android:id="@+id/BTN5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BTN4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+    <TextView
+        android:id="@+id/DISPLAY"
+        android:textSize="10pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@+id/BTN6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp" />
+    <Button
+        android:onClick="Clear"
+        android:text="CLEAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BTN6"
+        android:layout_marginBottom="14dp"
+        android:layout_above="@+id/BTN7"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:onClick="Back"
+        android:id="@+id/BTN7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/BTN6"
+        android:layout_marginBottom="44dp" />
+
+
+</RelativeLayout>
